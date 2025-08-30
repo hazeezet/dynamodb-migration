@@ -2,6 +2,7 @@ import boto3
 import re
 import sys
 import numbers
+import traceback
 from botocore.exceptions import ClientError, NoCredentialsError, EndpointConnectionError
 from .state_manager import save_state, load_undo_state, save_undo_state
 from .dynamodb_operations import get_table_key_schema, execute_batch_write
